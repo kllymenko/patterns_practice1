@@ -27,7 +27,6 @@ public class Homework {
         private LocalDateTime dueDateTime;
 
         public Builder() {
-            // Задаємо значення за замовчуванням або за необхідності
         }
 
         public Builder setHomeworkId(String homeworkId) {
@@ -49,8 +48,6 @@ public class Homework {
             if (description == null || dueDateTime == null) {
                 throw new IllegalStateException("Не всі обов'язкові поля були встановлені");
             }
-
-            // Створюємо та повертаємо об'єкт Homework
             return new Homework(this);
         }
     }

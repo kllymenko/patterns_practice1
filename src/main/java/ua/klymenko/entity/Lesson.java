@@ -88,7 +88,6 @@ public class Lesson {
             if (name == null || topic == null) {
                 throw new IllegalStateException("Не всі обов'язкові поля були встановлені");
             }
-
             return new Lesson(this);
         }
     }

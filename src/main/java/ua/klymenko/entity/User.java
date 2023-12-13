@@ -107,7 +107,6 @@ public class User {
             if (name == null || surname == null || phone == null || email == null || password == null || sex == null || role == null) {
                 throw new IllegalStateException("Не всі обов'язкові поля були встановлені");
             }
-
             return new User(this);
         }
     }
